@@ -57,7 +57,7 @@ userRouter.post('signup', async (c) => {
     setCookie(c, token, token, {
       sameSite: "lax",
       httpOnly: true,
-      secure: true
+      secure: c.env.NODE_ENV === "production"
     });
     c.status(200);
     return c.json({

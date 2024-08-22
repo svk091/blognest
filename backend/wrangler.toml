@@ -2,7 +2,8 @@ name = "blognest"
 compatibility_date = "2024-08-15"
 node_compat=true
 
-# [vars]
+[vars]
+NODE_ENV = "production"
 # MY_VAR = "my-variable"
 
 # [[kv_namespaces]]

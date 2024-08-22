@@ -20,13 +20,15 @@ const CreateBlog = () => {
         title,
         content
       },
+      withCredentials: true,
       headers: {
         Accept: `application/json`,
         'Content-Type': 'application/json',
       },
-      withCredentials: true,
     });
+    axios.post(".com", {
 
+    })
     try {
       toast.promise(myPromise, {
         loading: 'Loading...',
